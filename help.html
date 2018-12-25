@@ -1,0 +1,786 @@
+<!DOCTYPE html>
+<html lang="zh-cn" class="do-cke">
+<head>
+<meta charset="UTF-8">
+<link rel="icon" href="/DB/icons/15.png">
+<link rel="dns-prefetch" href="//st.styleweb.cn">
+<link rel="dns-prefetch" href="//image.styleweb.cn">
+<meta name="renderer" content="webkit">
+<meta name="viewport" content="width=device-width,initial-scale=1, minimum-scale=1.0, maximum-scale=1, user-scalable=no, minimal-ui">
+<meta name="applicable-device" content="pc,mobile">
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+<!--[if lt IE 9]><meta http-equiv="X-UA-Compatible" content="IE=9; IE=8; IE=7; IE=EDGE"><![endif]-->
+
+<title>DrugResistantStrainRP-DrugResistantRP
+</title>
+<meta name="robots" content="all" />
+<meta name="description" content="A Resource for Archiving Drug Resistant Strains Ribosomal Protein data"/>
+<meta name="keywords" content="ouyangxingyu"/><style>.wow {visibility: hidden;}</style>
+<!--[if lt IE 9]><style>.wow {visibility: visible;}</style><![endif]-->
+
+
+<link href="//bk.st.styleweb.com.cn/editor/??do-basic.css,do-layout.css,do-form.css,do-element.css,element/do-tabText.css,js/wow/animate.css?2018121713481" rel="stylesheet" type="text/css"/>
+<link href="//bk.st.styleweb.com.cn/editor/js/froala/css/??froala_style.min.css,plugins/image.min.css,plugins/table.min.css,plugins/colors.min.css?2018121713481" rel="stylesheet" type="text/css"/>
+<link href="//bk.st.styleweb.com.cn/editor/webfonts/style.css?2018121713481" rel="stylesheet" type="text/css"/>
+<style type="text/css">
+a:link {color: #FF0000}
+a:visited {color: #00FF00}
+a:hover {color: #FF00FF}
+a:active {color: #0000FF}
+</style>
+<style> 
+ .z-nav-conter clearfix{
+	margin:0;
+	padding:0;
+}
+
+.z-nav ul,.z-nav li{
+	list-style:none;
+}
+.z-nav li{
+	width:100px;
+	float:left;
+	position:relative;
+}
+.z-nav li a{
+	display:block;
+	
+	line-height:32px;
+	
+	-webkit-transition:color 0.4s ease-in-out;
+	transition:color 0.4s ease-in-out;
+}
+
+.z-nav a::before{
+	content:"";
+	width:40px;
+ margin-left:-20px;
+	height:3px;
+	background:#000;
+	display:block;
+	position:absolute;
+	left:0px;
+	bottom:0;
+	opacity:0;
+	-webkit-transition:opacity 0.4s ease-in-out, left 0.4s ease-in-out;
+	transition:opacity 0.4s ease-in-out, left 0.4s ease-in-out;
+}
+.z-nav ul li a:hover::before{
+	left:50%;
+	opacity:1;
+}
+
+
+
+.huzi-list1{overflow: visible!important;}
+.huzi-list1 .do-element-media-conter {
+ border: 1px solid rgb(77, 77, 77);
+ padding: 30px 30px 30px 29px;
+ }
+.huzi-list1 .title {border-bottom: 1px solid rgb(77, 77, 77);
+ padding-bottom: 4px;
+ border-top: 1px solid rgb(77,77,77);}
+
+
+.huzi-list2{overflow: visible!important;}
+.huzi-list2 .do-element-media-conter {
+ border: 1px solid rgb(77, 77, 77);
+ padding: 30px 30px 30px 29px;
+ }
+
+
+
+.do-element-button-content .do-btn.sm {
+ padding: 5px 30px;
+}
+
+
+
+@media only screen and (max-width: 800px){
+.do-tabtext-nav .do-lable-column>ul>li{float:none;}
+}
+
+
+.do-element-tabtext-content{
+ padding-top: 40px;
+}
+
+
+.do-header > .do-area {box-shadow: 0px 2px 16px rgba(0, 0, 0, 0.16);}
+ </style>
+ 
+ <script type="text/javascript">
+ var StaticUrl = '\/\/bk.st.styleweb.com.cn\/';
+ var sUserAgent= navigator.userAgent.toLowerCase();
+ var bIsIpad= sUserAgent.match(/ipad/i) == "ipad";
+ var bIsIphoneOs= sUserAgent.match(/iphone os/i) == "iphone os";
+ var bIsMidp= sUserAgent.match(/midp/i) == "midp";
+ var bIsUc7= sUserAgent.match(/rv:1.2.3.4/i) == "rv:1.2.3.4";
+ var bIsUc= sUserAgent.match(/ucweb/i) == "ucweb";
+ var bIsAndroid= sUserAgent.match(/android/i) == "android";
+ var bIsCE= sUserAgent.match(/windows ce/i) == "windows ce";
+ var bIsWM= sUserAgent.match(/windows mobile/i) == "windows mobile";
+ 
+ var browser=navigator.appName;
+ var b_version=navigator.appVersion;
+ var version=b_version.split(";");
+ var _vm = {};
+ var trim_Version= version[1] ? version[1].replace(/[ ]/g,"") : "";
+ var isIe = {
+ ie6:browser=="Microsoft Internet Explorer" && trim_Version=="MSIE6.0",
+ ie7:browser=="Microsoft Internet Explorer" && trim_Version=="MSIE7.0",
+ ie8:browser=="Microsoft Internet Explorer" && trim_Version=="MSIE8.0",
+ ie9:browser=="Microsoft Internet Explorer" && trim_Version=="MSIE9.0"
+ }
+
+ function isWeiXin(){
+ var ua = window.navigator.userAgent.toLowerCase();
+ if(ua.match(/MicroMessenger/i) == 'micromessenger'){
+ return true;
+ }else{
+ return false;
+ }
+ }
+ 
+ var version = {'css':'2018121713481','js' :'2018121713482'};
+ 
+ 
+ function setCookie(c_name,value,expiredays)
+ {
+ var exdate=new Date()
+ exdate.setDate(exdate.getDate()+expiredays)
+ document.cookie=c_name+ "=" +escape(value)+";path=/"+((expiredays==null) ? "" : ";expires="+exdate.toGMTString())
+ }
+
+ 
+ setCookie("time_offset", -new Date().getTimezoneOffset()/60);
+</script>
+
+<script src="//bk.st.styleweb.com.cn/editor/js/jquery.min.js"></script>
+
+<link rel="shortcut icon" type="image/ico" href=""/>
+<link rel="stylesheet" href="//bk.st.styleweb.com.cn/templates/default_test/style.css?2018121713481">
+
+<style> 
+ #header_567716_0 .do-area-bg-conter .bgcolor { background-color:rgb(67, 67, 67); }
+ 
+ #banner_567716_0 .do-area-bg-conter { }#banner_567716_0 .do-row-one,#banner_567716_0 .do-element-text { }#banner_567716_0 .do-area-bg-conter:before { }
+ 
+ #area_567716_1 .do-area-bg-conter .bgcolor { background-color:rgb(244, 244, 244); }#area_567716_3 .do-area-bg-conter .bgcolor { background-color:rgba(3, 3, 3, 0.74); }.lt-ie9 #area_567716_3 .do-area-bg-conter .bgcolor { filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#B2030303,endColorstr=#B2030303) }#area_567716_4 .do-area-bg-conter .bgcolor { background-color:rgb(244, 244, 244); }
+ 
+ #footer_567716_0 .do-area-bg-conter .bgcolor { background-color:rgb(48, 47, 47); }
+ </style>
+ 
+ <script>
+ (function(){
+ var obj = (document.getElementsByTagName('head')[0]||body),
+ js = null;
+ if(location.search=="?debug=true"){
+ js = document.createElement('script');
+ js.type='text/javascript';
+ js.onload = function(){
+ new VConsole();
+ };
+ js.onerror = function(e){
+ alert("vonsole.js load error,err:" + e);
+ };
+ js.src = "\/\/bk.st.styleweb.com.cn\/editor/js/vconsole.min.js";
+ obj.appendChild(js);
+ }
+ })();
+
+ var jsVersion = '2018121713482',
+ cssVersion = '2018121713481';
+ </script>
+ </head>
+ 
+<body do-page-width="1" class="fr-element fr-view do-page-567716" do-phone-nav="" do-phonenav-slip-direction="" do-phonenav-btnalign="" >
+<!--
+<div style="display: none"><img src="//bk.image.styleweb.com.cn/2016/07/15/28950fac66ba0bafb19a752116cc5cca.png?imageView2/1/w/500/h/500" /></div>
+<div class="do-nav-mwp">
+<input type="checkbox" id="do-m-menustate" class="do-m-menustate">
+<div class="do-nav-m m-user-nav do-bg-white-pn">
+<div class="do-site-name animate">
+
+<h2><a href="DB">DrugResistantRP</a></h2></div>
+
+<label class="do-m-menustate" for="do-m-menustate">
+<span class="do-m-menustate-span"></span></label>
+<div class="do-nav-m-bar animate">
+<ul class="do-nav-m-ul clearfix">
+<li class="nav567716 active" data-id="567716">
+<a href="."><span>Home</span></a></li>
+<li class="nav567717" data-id="567717">
+<a href="http://www.baidu.com"><span>Sequence</span></a></li><li class="nav567718" data-id="567718">
+<a href="about"><span>Drug</span></a></li>
+<li class="nav567719" data-id="567719"><a href="lianxi"><span>Strains</span></a></li>
+<li class="nav567791" data-id="567791"><a href="/567791.html"><span>Help</span></a></li></ul>
+</div></div></div>
+-->
+
+<div class="do-adrift"><div class="do-gotop" title="返回顶部"><i class="icon-to-top"></i></div></div>
+
+<div class="do-container animate">
+<div class="fp-normal-scroll do-header" do-header-fixed="true">
+<div class="do-area" id="header_567716_0">
+<div class="do-area-bg">
+<div class="do-area-bg-conter"><div class="bgcolor">
+</div></div></div>
+
+
+<div id="header_0" class="do-row do-row-one">
+<div class="do-row">
+<div class="do-col-12 do-H-c-120-121" id='H-c-120-121'>
+<div class="do-panelcol">
+<div class="do-block do-text do-11sg7a">
+<div class="do-element-text do-element-general">
+<div class="do-element-text-content do-html">
+<div class="do-html-content">
+</div></div></div></div></div></div></div></div>
+
+</div>
+
+<div class="do-area" id="header_567716_1">
+<div class="do-area-bg">
+<div class="do-area-bg-conter">
+<div class="bgcolor" style="color:white"></div></div></div>
+
+<div style="background-color:white;">
+<div id="header_1" class="do-row do-row-one">
+<div class="do-row">
+<div class="do-col-12 do-H-c-123-124" id='H-c-123-124'>
+<div class="do-panelcol">
+<div class="do-block do-space do-11sg79">
+<div class="do-element-space pc" style="padding-top:2.6%;"></div>
+
+<div class="do-element-space phone" 
+style="padding-top:2.63724434876211%;"></div></div>
+
+
+<div class="do-block do-rows">
+<div class="do-row">
+<div class="do-col-2 do-H-c-123-124-126-127" id='H-c-123-124-126-127'>
+<div class="do-panelcol">
+<div class="do-block do-logo do-11sg78">
+<div do-logo="" class="do-logo">
+<div class="z-logo align-center size6">
+
+<a href="/DB" title="database">
+<h1>
+<p style="color:black;"><img class="fr-dib" src="/DB/icons/OU.jpg" alt="LOGO"><strong>DRSRPD</strong></p></h1></a>
+</div></div></div></div></div>
+
+<div class="do-col-10 do-H-c-123-124-126-129" id='H-c-123-124-126-129'>
+<div class="do-panelcol">
+<div class="do-block do-nav do-11sg77">
+<div class="z-nav align-center">
+<div class="z-nav-bar">
+<div class="z-nav-container">
+<ul class="z-nav-conter clearfix">
+<li class="nav567716" data-id="567716"><a href="/DB"><span>Home</span></a></li>
+
+<li class="nav567717" data-id="567717"><a href="/DB/protein.html"><span>Protein</span></a></li>
+
+<li class="nav567718" data-id="567718"><a href="/DB/strains.html"><span>Strains</span></a></li>
+
+<li class="nav567719" data-id="567719"><a href="/DB/upload.html"><span>Upload</span></a></li>
+
+<li class="nav567791 active" data-id="567791"><a href="/DB/help.html"><span>Help</span></a></li>
+</ul>
+</div></div>
+<div class="z-nav-btn">
+<span class="line-1"></span>
+<span class="line-2"></span>
+<span class="line-3"></span>
+</div></div>
+<style>
+ .z-nav { text-align:right; }.z-nav-conter > li:hover > a { background-color:rgba(255, 255, 255, 0); }.z-nav-conter > li:hover > a { background-color:rgba(255, 255, 255, 0);color:rgb(0, 111, 182); }.z-nav-conter > li.active > a,.z-nav-conter > li:hover > a { background-color:rgba(255, 255, 255, 0); }.z-nav-conter > li.active > a,.z-nav-conter > li:hover > a { background-color:rgba(255, 255, 255, 0);color:rgb(0, 111, 182); }
+</style>
+</div></div></div></div></div></div>
+
+</div></div></div></div></div>
+
+<div class="do-area" id="header_567716_2" style="background-color:black;">
+<div class="do-area-bg">
+<div class="do-area-bg-conter">
+<div class="bgcolor"></div></div></div>
+<div id="header_2" class="do-row do-row-one">
+<div class="do-row">
+<div class="do-col-12 do-D-c-55-60" id='D-c-55-60'>
+<div class="do-panelcol">
+<div class="do-block do-space do-11sg74">
+<div class="do-element-space pc" style="padding-top:1.6666666666666667%;"></div>
+<div class="do-element-space phone" style="padding-top:3.357004519044545%;">
+</div></div></div></div></div></div></div></div>
+
+<div class="do-section fp-auto-height do-banner" data-fullname="BANNER">
+<div class="do-area" id="banner_567716_0">
+<div class="do-area-bg">
+<div class="do-area-bg-conter">
+<div class="bgcolor">
+</div></div></div>
+
+<div id="banner_0" class="do-row do-row-one">
+<div class="do-row">
+<div class="do-col-12 do-D-c-40-41" id='D-c-40-41'>
+<div class="do-panelcol">
+<div class="do-block do-space do-11sg7u">
+<div class="do-element-space pc" style="padding-top:11.853088480801336%;"></div>
+
+<div class="do-element-space phone" style="padding-top:16.400000000000002%;"></div></div>
+
+<div class="do-block do-rows">
+<div class="do-row">
+<div class="do-col-6 do-B-c-16-17-74" id='B-c-16-17-74'>
+<div class="do-panelcol">
+<div class="do-block do-space do-11sg7s">
+<div class="do-element-space pc" style="padding-top:6.357388316151202%;"></div>
+<div class="do-element-space phone" style="padding-top:5%;">
+</div></div></div></div>
+
+<div class="do-col-6 do-B-c-16-17-71-72" id='B-c-16-17-71-72'>
+<div class="do-panelcol">
+<div class="do-block do-space do-11sgon">
+<div class="do-element-space pc" style="padding-top:6.666666666666667%;"></div>
+
+<div class="do-element-space phone" style="padding-top:17.1%;">
+</div></div></div></div></div></div></div></div></div></div></div></div>
+
+<div class="do-body">
+<div class="do-section do-area do-area-full" id="area_567716_0" data-fullname="">
+<div class="do-area-bg">
+<div class="do-area-bg-conter">
+<div class="bgcolor">
+</div></div></div>
+
+<div id="area_0" class="do-row do-row-one">
+<div class="do-row">
+<div class="do-col-12 do-D-c-10-11" id='D-c-10-11'>
+<div class="do-panelcol">
+<div class="do-block do-slide do-11sehm">
+<div class="do-element-swiper do-element-slide do-slide-height" style="padding-top:27.186910006293267%;">
+<div class="do-element-swiper-content swiper-container" data-effect="slide" id="slide_11sehm">
+<div class="swiper-wrapper">
+<div class="swiper-slide">
+<div class="do-element-slide-toys">
+<div class="do-middle">
+<div class="do-middle-centers do-element-slide-toys-con">
+<div class="do-slide-textbox">
+<div class="do-slide-text">
+
+<p style="line-height: 1;">
+<span style="font-family: SimSuncss;">
+<span style="color: rgb(255, 255, 255);">
+<span style="font-size: 60px;">Drug-Resistant Strains</span></span></span></p>
+
+<p style="line-height: 1;">
+<span style="font-family: SimSuncss;">
+<span style="color: rgb(255, 255, 255);">
+<span style="font-size: 60px;">Ribosomal Protein Database</span>&nbsp;</span></span></p>
+
+<p style="line-height: 1;"><br></p>
+
+<p style="line-height: 1;">
+<span style="font-family: SimSuncss;">
+<span style="color: rgb(255, 255, 255);">
+<span style="font-size: 22px;">This is a database containing information on ribosomal proteins of drug-resistant strains.</span></span></span></p>
+
+<p style="line-height: 1;"><br></p>
+
+<p style="line-height: 1;"><span style="font-family: SimSuncss;"></span></p>
+</div></div></div></div></div>
+
+<div class="do-element-slide-img">
+<div class="do-slide-bg">
+<div class="do-slide-bg-conter bgimg" title="" style="background-image:url(http://image.styleweb.cn/2016/06/17/ce44581f793681ceb83e6411cc7b0af2.jpe?imageView2/2/w/2000/q/100);">
+<div class="slide-bgcolor" style="background-color:rgba(0, 0, 0, 0.45);">
+</div></div></div></div></div></div></div></div></div></div></div></div></div></div>
+
+<div class="do-section do-area" id="area_567716_1" data-fullname="">
+<div class="do-area-bg">
+<div class="do-area-bg-conter">
+<div class="bgcolor">
+</div></div></div>
+
+<div id="area_1" class="do-row do-row-one">
+<div class="do-row">
+<div class="do-col-12 do-D-c-13-14" id='D-c-13-14'><div class="do-panelcol">
+<div class="do-block do-space do-11sehv">
+<div class="do-element-space" style="padding-top:5%;">
+<!-- start -->
+<div class="do-block do-text do-12k5yp">
+<div class="do-text-12k5yp">
+<div class="do-element-text do-element-general">
+<div class="do-element-text-content do-html">
+<div class="do-html-content">
+<p><span style="font-size: 22px;"><strong>About DRSRPD (Drug Resistant Strains Riosomal Protein Database): <span>&nbsp;</span></strong>
+</span></p>
+</div></div>
+<div class="do-area-bg">
+<div class="do-area-bg-conter">
+<div class="bgcolor"></div>
+</div></div>
+<style>.do-text-12k5yp .do-area-bg-conter { background-image:url(http://bk.image.styleweb.com.cn/2018/12/25/43321_jq36wqjo.jpg)!important; }.do-text-12k5yp .do-area-bg { box-shadow:0px 0px 8px 7px rgb(237,237,237); }</style>
+</div></div></div></div></div></div></div></div></div>
+
+<div class="do-body">
+<div class="do-section do-area" id="area_567791_0" data-fullname="">
+<div class="do-area-bg">
+<div class="do-area-bg-conter">
+<div class="bgcolor"></div></div></div>
+<div id="area_0" class="do-row do-row-one">
+<div class="do-row">
+<div class="do-col-12 do-D-c-43-44" id='D-c-43-44'>
+<div class="do-panelcol">
+<div class="do-block do-rows">
+<div class="do-row">
+<div class="do-col-7 do-D-c-43-44-46-47" id='D-c-43-44-46-47'>
+<div class="do-panelcol">
+<div class="do-block do-image do-12k7yi">
+<div class="do-element-image do-element-media">
+<div class="do-element-image-content do-html" style="padding-top:55.05124450951684%;">
+<div class="do-image-href sizeimg4">
+<div class="do-middle">
+<div class="do-middle-center">
+<img class="scrollLoading" data-src="http://bk.image.styleweb.com.cn/2018/12/25/43321_jq3aqdr2.png?imageView2/2/w/2049/q/100" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAEElEQVR42gEFAPr/AP///wAI/AL+Sr4t6gAAAABJRU5ErkJggg==" alt=""/>
+</div></div></div></div></div></div></div></div>
+<div class="do-col-5 do-D-c-43-44-46-49" id='D-c-43-44-46-49'>
+<div class="do-panelcol">
+<div class="do-block do-hr do-12k7yf">
+<div class="do-element-line default " style="padding-top:8.281573498964804%;">
+<div class="do-element-line-content">
+<div class="do-middle">
+<div class="do-middle-center">
+<hr style="border-color:rgb(210, 210, 210);">
+</div></div></div></div></div><div class="do-block do-text do-12k7ye">
+<div class="do-text-12k7ye">
+<div class="do-element-text do-element-general">
+<div class="do-element-text-content do-html">
+<div class="do-html-content">
+<ul><li>
+<p><span style="font-size: 16px;">A drug-resistant strain refers to a strain that develops resistance to a corresponding antibiotic after a long-term antibiotic selection. With the widespread use of antibiotics, drug-resistant strains have become the most common pathogens causing clinical infections. Ribosome proteins are a collective term for all proteins involved in the formation of ribosomes. However, no database currently contains ribosomal protein information for drug-resistant strains.</span></p>
+</li><li>
+<p><span style="font-size: 16px;">To address this issue, we constructed Drug Resistant Strains Riosomal Protein Database(DRSRPD), which is specifically designed for archiving and analyzing drug resistant strains riosomal protein data. These data come from five existing databases, CARD, ARDB, NCBI, UNIPROT, and ATCC. By now, there are 1630 strains with all of their ribosomal protein informations. Additionally, about 10 high-impact publications about drug resistant strains riosomal protein have also been included in DRSRPD.<br><br></p>
+</li></ul>
+<p><br></p></div></div></div></div></div></div></div></div></div><div class="do-block do-hr do-12kakg">
+<div class="do-element-line default "><div class="do-element-line-content"><div class="do-middle">
+<div class="do-middle-center"><hr style="border-color:#444;">
+</div></div></div></div></div></div></div></div></div></div>
+<div class="do-section do-area" id="area_567791_1" data-fullname="">
+<div class="do-area-bg"><div class="do-area-bg-conter" >
+<div class="bgcolor"></div></div></div>
+<div id="area_1" class="do-row do-row-one">
+<div class="do-row">
+<div class="do-col-12 do-D-c-89-90" id='D-c-89-90'>
+<div class="do-panelcol">
+<div class="do-block do-code do-12kajz">
+<div class="do-element-code">
+<div class="do-element-code-content">
+<style>
+	.ly-imgtext-btn .swiper-button-next.swiper-button-white, .ly-imgtext-btn .swiper-container-rtl .swiper-button-prev.swiper-button-white{background-image: url(http://bk.image.styleweb.com.cn/2016/12/3/3917_iw8zorz1.png?imageView2/0/w/390);background-size: 60%;}
+	.ly-imgtext-btn .swiper-button-prev.swiper-button-white, .ly-imgtext-btn .swiper-container-rtl .swiper-button-next.swiper-button-white{background-image:url(http://bk.image.styleweb.com.cn/2016/12/3/3917_iw8zorz9.png?imageView2/0/w/390);background-size: 60%;}
+	.ly-imgtext-btn .swiper-button-next, .ly-imgtext-btn .swiper-button-prev{width: 48px; height: 48px;margin-left:-20px;margin-right: -20px;}
+	.ly-imgtext-btn .swiper-button-next, .ly-imgtext-btn .swiper-button-prev{ background-color:rgba(0,0,0,0);}
+	.ly-imgtext-btn .swiper-pagination {display: none;}
+	.ly-imgtext-btn .swiper-button-next, .ly-imgtext-btn .swiper-button-prev{margin-top: -44px !important;}
+</style></div></div></div>
+<div class="do-block do-text do-12kaki">
+<div class="do-text-12kaki">
+<div class="do-element-text do-element-general">
+<div class="do-element-text-content do-html">
+<div class="do-html-content"><span style="font-size: 22px;">
+<strong><span style="color: rgb(0,0,0);"><a href="/DB/protein.html">
+<em>Protein</em></a></span></strong></span></div></div>
+<div class="do-area-bg"><div class="do-area-bg-conter"><div class="bgcolor"></div></div></div>
+<style>.do-text-12kaki .do-area-bg-conter { background-image:url(http://bk.image.styleweb.com.cn/2018/12/25/43321_jq36wqjo.jpg)!important; }.do-text-12kaki .do-area-bg { box-shadow:0px 0px 8px 7px rgb(237,237,237); }</style></div></div></div></div></div></div></div></div>
+<div class="do-section do-area" id="area_567791_2" data-fullname=""><div class="do-area-bg"><div class="do-area-bg-conter">
+<div class="bgcolor"></div></div></div><div id="area_2" class="do-row do-row-one">
+<div class="do-row">
+<div class="do-col-12 do-D-c-73-74" id='D-c-73-74'>
+<div class="do-panelcol">
+<div class="do-block do-text do-12kak8">
+<div class="do-text-12k5y7">
+<div class="do-element-text do-element-general">
+<div class="do-element-text-content do-html">
+<div class="do-html-content">
+<p><span style="font-size: 16px;">This module contains all ribosomal protein information for 1,630 resistant strains. The ribosomal protein information can be viewed by selecting the strain that you want to query. You can download their csv files to learn more details.</span></p>
+</div></div></div></div></div></div></div></div></div></div>
+<div class="do-section do-area" id="area_567791_3" data-fullname=""><div class="do-area-bg">
+<div class="do-area-bg-conter">
+<div class="bgcolor"></div></div></div>
+<div id="area_3" class="do-row do-row-one">
+<div class="do-row">
+<div class="do-col-12 do-D-c-8-9" id='D-c-8-9'><div class="do-panelcol"><div class="do-block do-rows">
+<div class="do-row">
+<div class="do-col-12 do-D-c-8-9-21-22" id='D-c-8-9-21-22'>
+<div class="do-panelcol">
+<div class="do-block do-hr do-12k5y9">
+<div class="do-element-line default">
+<div class="do-element-line-content">
+<div class="do-middle">
+<div class="do-middle-center">
+<hr style="border-color:#444;"></div></div></div></div></div><div class="do-block do-code do-12kak1">
+<div class="do-element-code">
+<div class="do-element-code-content">
+<style>
+	.ly-imgtext-btn .swiper-button-next.swiper-button-white, .ly-imgtext-btn .swiper-container-rtl .swiper-button-prev.swiper-button-white{background-image: url(http://bk.image.styleweb.com.cn/2016/12/3/3917_iw8zorz1.png?imageView2/0/w/390);background-size: 60%;}
+	.ly-imgtext-btn .swiper-button-prev.swiper-button-white, .ly-imgtext-btn .swiper-container-rtl .swiper-button-next.swiper-button-white{background-image:url(http://bk.image.styleweb.com.cn/2016/12/3/3917_iw8zorz9.png?imageView2/0/w/390);background-size: 60%;}
+	.ly-imgtext-btn .swiper-button-next, .ly-imgtext-btn .swiper-button-prev{width: 48px; height: 48px;margin-left:-20px;margin-right: -20px;}
+	.ly-imgtext-btn .swiper-button-next, .ly-imgtext-btn .swiper-button-prev{ background-color:rgba(0,0,0,0);}
+	.ly-imgtext-btn .swiper-pagination {display: none;}
+	.ly-imgtext-btn .swiper-button-next, .ly-imgtext-btn .swiper-button-prev{margin-top: -44px !important;}
+</style></div></div></div>
+<div class="do-block do-text do-12kakc">
+<div class="do-text-12kakc">
+<div class="do-element-text do-element-general">
+<div class="do-element-text-content do-html">
+<div class="do-html-content">
+<span style="font-size: 22px; color: rgb(0,0,0);">
+<strong><a href="/DB/strains.html"><em>Strains</em></a></strong></span></div></div>
+<div class="do-area-bg">
+<div class="do-area-bg-conter">
+<div class="bgcolor"></div></div></div>
+<style>.do-text-12kakc .do-area-bg-conter { background-image:url(http://bk.image.styleweb.com.cn/2018/12/25/43321_jq36wqjo.jpg)!important; }.do-text-12kakc .do-area-bg { box-shadow:0px 0px 8px 7px rgb(237,237,237); }
+</style></div></div></div><div class="do-block do-text do-12k5y7">
+<div class="do-text-12k5y7">
+<div class="do-element-text do-element-general">
+<div class="do-element-text-content do-html">
+<div class="do-html-content">
+<p><span style="font-size: 16px;">This module contains all the strains contained in the DRSRPD database and their detailed links on Wikipedia.</span></p></div></div></div></div></div></div></div></div></div>
+<div class="do-block do-hr do-12kak6">
+<div class="do-element-line default ">
+<div class="do-element-line-content">
+<div class="do-middle">
+<div class="do-middle-center">
+<hr style="border-color:#444;"></div></div></div></div></div>
+<div class="do-block do-code do-12k5y4">
+<div class="do-element-code">
+<div class="do-element-code-content">
+<style>
+	.ly-imgtext-btn .swiper-button-next.swiper-button-white, .ly-imgtext-btn .swiper-container-rtl .swiper-button-prev.swiper-button-white{background-image: url(http://bk.image.styleweb.com.cn/2016/12/3/3917_iw8zorz1.png?imageView2/0/w/390);background-size: 60%;}
+	.ly-imgtext-btn .swiper-button-prev.swiper-button-white, .ly-imgtext-btn .swiper-container-rtl .swiper-button-next.swiper-button-white{background-image:url(http://bk.image.styleweb.com.cn/2016/12/3/3917_iw8zorz9.png?imageView2/0/w/390);background-size: 60%;}
+	.ly-imgtext-btn .swiper-button-next, .ly-imgtext-btn .swiper-button-prev{width: 48px; height: 48px;margin-left:-20px;margin-right: -20px;}
+	.ly-imgtext-btn .swiper-button-next, .ly-imgtext-btn .swiper-button-prev{ background-color:rgba(0,0,0,0);}
+	.ly-imgtext-btn .swiper-pagination {display: none;}
+	.ly-imgtext-btn .swiper-button-next, .ly-imgtext-btn .swiper-button-prev{margin-top: -44px !important;}
+</style></div></div></div>
+
+<div class="do-block do-text do-12kak3">
+<div class="do-text-12kak3">
+<div class="do-element-text do-element-general">
+<div class="do-element-text-content do-html">
+<div class="do-html-content">
+<p><span style="font-size: 22px;"><strong><span style="color: rgb(0,0,0);"><a href="/DB/upload.html"><em>Upload</em></a></span></strong></span></p></div></div>
+<div class="do-area-bg">
+<div class="do-area-bg-conter">
+<div class="bgcolor"></div></div></div>
+<style>.do-text-12kak3 .do-area-bg-conter { background-image:url(http://bk.image.styleweb.com.cn/2018/12/25/43321_jq36wqjo.jpg)!important; }.do-text-12kak3 .do-area-bg { box-shadow:0px 0px 8px 7px rgb(237,237,237); }</style></div></div></div>
+<div class="do-block do-text do-12kajx">
+<div class="do-text-12kajx">
+<div class="do-element-text do-element-general">
+<div class="do-element-text-content do-html">
+<div class="do-html-content">
+<p><span style="font-size: 16px;">This module allows you to upload a database that is not included in the database to update the database. Includes the name of the resistant strain, the number and details of the ribosomal protein.</span></p>
+</div></div></div></div></div>
+<div class="do-block do-hr do-12kajv">
+<div class="do-element-line default ">
+<div class="do-element-line-content">
+<div class="do-middle">
+<div class="do-middle-center">
+<hr style="border-color:#444;"></div></div></div></div></div>
+<!-- end -->
+</div></div></div></div></div></div></div>
+
+
+
+
+<div class="do-section do-area" id="area_567716_3" data-fullname="">
+<div class="do-area-bg">
+<div class="do-area-bg-conter" style="background-image: url('http://bk.image.styleweb.com.cn/2016/06/17/9d6a1a239b3147ba11ca943f2e62d917.jpe?imageMogr2/thumbnail/2000x2000/q/100');background-attachment:">
+<div class="bgcolor"></div></div></div>
+
+<div id="area_3" class="do-row do-row-one">
+<div class="do-row">
+<div class="do-col-12 do-D-c-25-26" id='D-c-25-26'><div class="do-panelcol">
+<div class="do-block do-space do-11seho">
+<div class="do-element-space" style="padding-top:6.666666666666667%;">
+</div></div>
+<div class="do-block do-text do-11sei5">
+<div class="do-text-11sei5">
+<div class="do-element-text do-element-general">
+<div class="do-element-text-content do-html">
+<div class="do-html-content">
+<p style="text-align: center;"><span style="color: rgb(255, 255, 255);">PLEASE CONTACT MR.CHEN</span></p>
+</div></div></div></div></div>
+
+<div class="do-block do-text do-11seib">
+<div class="do-text-11seib">
+<div class="do-element-text do-element-general">
+<div class="do-element-text-content do-html">
+<div class="do-html-content">
+<p style="text-align: center;"><span style="color: rgb(255, 255, 255);">3471314872@qq.com</span></p>
+</div></div></div></div></div>
+
+<div class="do-block do-space do-11seic">
+<div class="do-element-space" style="padding-top:3.3333333333333335%;">
+</div></div></div></div></div></div></div>
+
+<div class="do-section do-area do-area-full" id="area_567716_4" data-fullname=""><div class="do-area-bg">
+<div class="do-area-bg-conter">
+<div class="bgcolor"></div></div></div>
+
+<div id="area_4" class="do-row do-row-one">
+<div class="do-row">
+<div class="do-col-12 do-D-c-34-35" id='D-c-34-35'>
+<div class="do-panelcol">
+<div class="do-block do-space do-11sei1">
+<div class="do-element-space" style="padding-top:3.983516483516483%;">
+</div></div></div></div></div></div></div></div>
+
+<div class="do-footer">
+<div class="do-area" id="footer_567716_0">
+<div class="do-area-bg">
+<div class="do-area-bg-conter">
+<div class="bgcolor"></div></div></div>
+
+<div id="footer_0" class="do-row do-row-one">
+<div class="do-row">
+<div class="do-col-12 do-F-c-61-62" id='F-c-61-62'>
+<div class="do-panelcol">
+<div class="do-block do-text do-11sehh">
+<div class="do-text-11sehh">
+<div class="do-element-text do-element-general">
+<div class="do-element-text-content do-html">
+<div class="do-html-content">
+<p style="text-align: center;"><span style="color: rgb(255, 255, 255);">Drug Resistant Strains Ribosomal Protein Database</span></p>
+</div></div></div></div></div></div></div></div></div></div></div>
+
+
+<style>
+body .do-developers, .do-developers{color:#666!important;width:100%!important;height: 38px!important;}
+body .do-developers a, .do-developers a{color:#666!important;display: inline-block!important;}
+body .do-developers a:hover, .do-developers a:hover{color:#000!important;}
+body .do-developers, .do-developers{display: block!important; border-top:1px solid #ecebeb!important; background:#f3f3f3!important;padding:12px!important;text-align: center!important;font-size: 13px!important;line-height: 100%!important;opacity: 1!important;text-indent:0!important}
+body .do-developers i, .do-developers i{font-size:13px!important;vertical-align: middle;position: relative;top:-1px}
+body .do-developers *, .do-developers *{opacity: 1!important;text-indent:0!important;display: inline-block!important;}
+
+
+body.zhuziAd{padding-bottom:48px!important;}
+body.zhuziAd #zhuziAd,#zhuziAd{width:100%!important;visibility: hidden!important; position: fixed!important;bottom: 0!important;left: 0!important;right: 0!important;display: block!important;background-color:rgba(0,0,0,.8)!important;height:48px!important;line-height: 48px!important;text-align: center!important;color: #fff!important;z-index: 999;opacity: 0!important;-webkit-transition: all 0.35s ease-out;transition: all 0.35s ease-out;-webkit-transform: translateY(100%);transform: translateY(100%)!important;}
+body.zhuziAd #zhuziAd a, #zhuziAd a{color: #fff}
+body.zhuziAd #zhuziAd{visibility: visible!important;opacity: 1!important;-webkit-transform: translateY(0)!important;
+ transform: translateY(0)!important;}
+body.zhuziAd #zhuziAd .btn, #zhuziAd .btn{border:solid 2px #4b5;border-radius: 100px;padding: 2px 14px;margin-left:10px}
+body.zhuziAd #zhuziAd .btn:hover, #zhuziAd .btn:hover{color: #fff;background-color: #4b5}
+.lt-ie9 #zhuziAd{background-color:#333333!important;}
+
+body.zhuziAd .do-gotop{bottom: 67px;}
+body.zhuziAd .do-online-service{bottom: 117px;}
+
+@media only screen and (max-width: 640px){
+ body.zhuziAd .do-online-service{bottom:48px}
+ body.zhuziAd .do-gotop{bottom: 126px}
+ body.zhuziAd.phoneBottom{padding-bottom:108px }
+}
+
+
+</style></div>
+
+ 
+ <script src="//bk.st.styleweb.com.cn/editor/js/??jquery.serializejson.min.js,layer/layer.js,waypoints/jquery.waypoints.min.js,jquery.scrollLoading-min.js,Validform_v5.3.2_min.js" merge="true" crossorigin></script>
+ <script src="//bk.st.styleweb.com.cn/editor/js/wow/wow.min.js?2018121713482" crossorigin></script>
+ <script src="//bk.st.styleweb.com.cn/editor/js/head.js?2018121713482" crossorigin></script>
+ <script src="//bk.st.styleweb.com.cn/editor/js/common.js?2018121713482" crossorigin></script>
+ <script src="//bk.st.styleweb.com.cn/editor/js/swiper/js/swipers.js?2018121713482" crossorigin></script>
+ <script src="/zhuzi-statistic.js?path=http%3a%2f%2fdrugresistantrp.s.cn.vc%2f&siteid=56159&referer="></script>
+ 
+ <script type="text/javascript">
+$(function(){
+ 
+ 
+ var doFooterObj = $(".do-footer").length ? $(".do-footer") : $(".do-developers"),
+ doBodyObj = $(".do-banner").length ? $(".do-banner") : false || $(".do-body").length ? $(".do-body") : $("#fullpage").find(".do-area").first(),
+ bodyObj = $("body");
+ setTimeout(function(){
+ var devDownWaypoint = new Waypoint({
+ element: doBodyObj,
+ handler: function(direction) {
+ if(direction=="up"){
+ bodyObj.removeClass("zhuziAd")
+ }
+ },
+ offset: '-100px'
+ })
+ var devUpWaypoint = new Waypoint({
+ element: doFooterObj,
+ handler: function(direction) {
+ if(direction=="down"){
+ bodyObj.addClass("zhuziAd");
+ }
+ },
+ offset: 'bottom-in-view'
+ })
+ },300);
+ 
+
+ var wow = new WOW({
+ animateClass: 'animated',
+ offset: 0,
+ callback:function(box) { }
+ });
+ wow.init();
+
+ if(isWeiXin() && bIsAndroid){
+ var fullArea = $(".do-area-fullHeight .do-row-one > .do-row, .do-slide-full");
+ fullArea.height($(window).height());
+ }
+
+ if(head.desktop){
+ if(!_vm.online) $("#do-online-service").prop("checked",true);
+ }else{
+ $("#do-online-service").prop("checked",false);
+ }
+
+ 
+ if(bIsAndroid){
+ $(".do-area-videobg").find("video").remove();
+ var vodbgObj = $(".do-area-videobg .do-area-bg-conter");
+ vodbgObj.each(function(){
+ $(this).css('background-image','url("'+$(this).data("vodbg")+'")');
+ });
+ }
+
+ 
+ var weixinBtn = $(".weixinBtn"),
+ popwximg = $(".do-popwximg");
+ if(weixinBtn.length){
+ weixinBtn.on("click",function(e){
+ popwximg.show();
+ });
+ popwximg.on("click",".do-close",function(){
+ popwximg.hide();
+ });
+ }
+
+ layer.config({
+ path: '\/\/bk.st.styleweb.com.cn\/editor/js/layer/',
+ extend: ['skin/style.css'], 
+ skin: 'layer-zhuzi' 
+ });
+
+
+});
+
+if(typeof _hmt == 'undefined'){
+ var _hmt = _hmt || [];
+ (function() {
+ var hm = document.createElement("script");
+ hm.src = "//hm.baidu.com/hm.js?03e4f2f8489d3cb343fc1c99966f477b";
+ var s = document.getElementsByTagName("script")[0];
+ s.parentNode.insertBefore(hm, s);
+ })();
+}
+</script>
+
+</body>
+</html>
